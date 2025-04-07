@@ -5,9 +5,9 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Promise = require(ReplicatedStorage.Packages.Promise)
 
 --// Module
-local Runtime = {}
+local Runtimer = {}
 
-function Runtime.new(path: Instance)
+function Runtimer.new(path: Instance)
 	return Promise.new(function(resolve, reject)
 		local success, result = pcall(function()
 			for _, module in path:GetChildren() do
@@ -25,4 +25,4 @@ function Runtime.new(path: Instance)
 	end)
 end
 
-return Runtime
+return Runtimer
