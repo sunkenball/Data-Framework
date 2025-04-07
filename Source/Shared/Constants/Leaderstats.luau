@@ -1,3 +1,4 @@
+--// Module
 return {
 	["Cash"] = "Cash 💵",
 }
